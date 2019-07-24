@@ -5,8 +5,9 @@ const About = () => {
   return (
     <div className="aboutContainer">
       <Sidebar />
-
-      <h1 className="text-header">About</h1>
+      <div className="homeInfo">
+        <h1 className="text-header animated jackInTheBox">About</h1>
+      </div>
     </div>
   );
 };

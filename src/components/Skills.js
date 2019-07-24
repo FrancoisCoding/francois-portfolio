@@ -5,8 +5,9 @@ const Skills = () => {
   return (
     <div className="skillsContainer">
       <Sidebar />
-
-      <h1 className="text-header">Skills</h1>
+      <div className="homeInfo">
+        <h1 className="text-header animated jackInTheBox">Skills</h1>
+      </div>
     </div>
   );
 };
