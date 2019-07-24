@@ -203,3 +203,13 @@ a {
   border-radius: 50%;
   margin-top: 1rem;
 }
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.projects img {
+  height: auto;
+  width: 90%;
+}

@@ -16,40 +16,31 @@ const charPoses = {
   }
 };
 
-const useStyles = makeStyles(theme => ({
-  root: {
-    flexGrow: 1
-  }
-}));
-
 const Work = () => {
-  const classes = useStyles();
   return (
     <div className="workContainer">
       <Sidebar />
-      <div className={classes.root}>
-        <Grid container spacing={3}>
-          <Grid item xs>
-            xs
-          </Grid>
-          <Grid item xs>
-            xs
-          </Grid>
-          <Grid item xs>
-            xs
-          </Grid>
-        </Grid>
-        <Grid container spacing={3}>
-          <Grid item xs>
-            xs
-          </Grid>
-          <Grid item xs={6}>
-            xs=6
-          </Grid>
-          <Grid item xs>
-            xs
-          </Grid>
-        </Grid>
+      <div className="projects projectCover">
+        <img
+          src={process.env.PUBLIC_URL + "/project1.png"}
+          alt="reactLogo"
+          class="card-img-top"
+        />
+        <img
+          src={process.env.PUBLIC_URL + "/project2.png"}
+          alt="reactLogo"
+          class="card-img-top"
+        />
+        <img
+          src={process.env.PUBLIC_URL + "/project3.png"}
+          alt="reactLogo"
+          class="card-img-top"
+        />
+        <img
+          src={process.env.PUBLIC_URL + "/project4.png"}
+          alt="reactLogo"
+          class="card-img-top"
+        />
       </div>
     </div>
   );
