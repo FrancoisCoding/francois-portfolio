@@ -7,6 +7,17 @@ import Work from "./components/Work";
 import Contact from "./components/Contact";
 import { Switch, Route } from "react-router-dom";
 
+const charPoses = {
+  hoverable: true,
+  init: { scale: 1 },
+  hover: {
+    scale: 1.01,
+    transition: {
+      type: "spring",
+      velocity: 12
+    }
+  }
+};
 function App() {
   return (
     <div className="Application">

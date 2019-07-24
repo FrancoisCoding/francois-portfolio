@@ -1,21 +1,40 @@
 import React from "react";
 import Sidebar from "./Sidebar";
+import SplitText from "react-pose-text";
 
+const charPoses = {
+  hoverable: true,
+  init: { scale: 1 },
+  hover: {
+    scale: 1.01,
+    transition: {
+      type: "spring",
+      velocity: 12
+    }
+  }
+};
 const Home = () => {
   return (
     <div className="homeContainer">
       <Sidebar />
       <div className="homeInfo">
         <h1 className="text-header animated lightSpeedIn">
-          Hello, my name is Isaiah Francois.
+          <SplitText charPoses={charPoses}>
+            Front-end Developer & Game Designer
+          </SplitText>
         </h1>
-        <p className="text animated fadeInLeftBig">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
-          voluptatibus corrupti atque repudiandae earum quasi, rerum aspernatur
-          iste consectetur quibusdam in architecto tempore nihil quo, tempora
-          soluta necessitatibus odio voluptate.
+        <p className="text">
+          <SplitText charPoses={charPoses}>
+            I design and code day in and day out creating beautiful designs, and
+            I love what I do.
+          </SplitText>
         </p>
-        <div className="homeBtn">Contact Us</div>
+        <img
+          src={process.env.PUBLIC_URL + "/portrait.png"}
+          alt="Cartoon Portrait"
+          className="cartoonPortrait"
+        />
+        {/* <div className="homeBtn">Contact Us</div> */}
       </div>
     </div>
   );
