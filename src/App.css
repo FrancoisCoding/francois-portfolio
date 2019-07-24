@@ -1,33 +1,144 @@
-.App {
-  text-align: center;
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #f2f3ee;
+  overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Text Styles */
+.text-header {
+  color: #866e60;
+  margin: 2rem auto;
+}
+
+/* Sidebar Styling */
+.sidebar {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: #3a4660;
+  width: 10%;
+  height: 100vh;
+  justify-content: space-around;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar-top {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  justify-content: space-around;
+  height: 70%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebarSocials {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 30%;
+}
+
+.skillsContainer,
+.aboutContainer,
+.workContainer,
+.homeContainer,
+.flex {
+  display: flex;
+}
+
+.contactContainer {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactContainer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.brand {
+  text-align: center;
+}
+
+.wrapper {
+  box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+}
+
+.wrapper > * {
+  padding: 1em;
+}
+
+.company-info {
+  background: var(--mainGreen);
+}
+
+.company-info h3,
+.company-info ul {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.contact {
+  background: var(--controller);
+}
+
+/* FORM STYLES */
+.contact form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.contact form label {
+  display: block;
+}
+
+.contact form p {
+  margin: 0;
+}
+
+.contact form .full {
+  grid-column: 1 / 3;
+}
+
+.contact form button,
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #c9e6ff;
+}
+
+.contact form button {
+  background: #845007;
+  border: 0;
+  text-transform: uppercase;
+}
+
+.contact form button:hover,
+.contact form button:focus {
+  color: #fff;
+  outline: 0;
+  transition: background-color 2s ease-out;
+}
+
+.contactBtn {
+  font-size: 2rem;
+}
+
+.alert {
+  text-align: center;
+  padding: 10px;
+  background: #79c879;
+  color: white;
+  margin-bottom: 10px;
+  display: none;
 }
