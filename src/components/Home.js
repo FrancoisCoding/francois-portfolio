@@ -7,7 +7,7 @@ const Home = () => {
       <Sidebar />
       <div className="homeInfo">
         <h1 className="text-header animated lightSpeedIn">
-          Hi, I'm Isaiah, fullstack web developer
+          Hello, my name is Isaiah Francois.
         </h1>
         <p className="text animated fadeInLeftBig">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
@@ -15,7 +15,7 @@ const Home = () => {
           iste consectetur quibusdam in architecto tempore nihil quo, tempora
           soluta necessitatibus odio voluptate.
         </p>
-        <div className="homeBtn">Get in Contact?</div>
+        <div className="homeBtn">Contact Us</div>
       </div>
     </div>
   );

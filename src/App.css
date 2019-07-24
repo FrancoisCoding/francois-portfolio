@@ -23,6 +23,26 @@ body {
   font-weight: 500;
 }
 
+.homeBtn {
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  background: transparent;
+  border: 0.05rem solid #866e60;
+  border-color: #866e60;
+  color: #866e60;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  max-width: 15%;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.homeBtn:hover {
+  background: #3a4660;
+  color: #f2f3ee;
+}
+
 .headerAnim {
   letter-spacing: 0;
   padding: 0.25em 0 0.325em;
