@@ -22,12 +22,12 @@ const Skills = () => {
           {" "}
           <SplitText charPoses={charPoses}>Skills</SplitText>
         </h1>
-        <p className="text">
+        <div className="text">
           <SplitText charPoses={charPoses}>
             I design and code day in and day out creating beautiful designs, and
             I love what I do.
           </SplitText>
-        </p>
+        </div>
       </div>
     </div>
   );

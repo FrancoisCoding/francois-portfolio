@@ -7,6 +7,7 @@
 
 body {
   background: #f2f3ee;
+  overflow-x: hidden;
 }
 
 /* Text Styles */
@@ -212,4 +213,9 @@ a {
 .projects img {
   height: auto;
   width: 90%;
+}
+
+.models {
+  height: auto;
+  width: 50%;
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import Sidebar from "./Sidebar";
 import SplitText from "react-pose-text";
+import LanguageModel from "./LanguagesModel";
 
 const charPoses = {
   hoverable: true,
@@ -23,14 +24,17 @@ const About = () => {
             Hello, my name is Isaiah Francois.
           </SplitText>
         </h1>
-        <p className="text">
+        <div className="text">
           <SplitText charPoses={charPoses}>
             Since beginning my journey as a fullstack developer, I've created
             many sites, designed games/apps , and have built and modified
             backend servers. I'm confident in my skills, always learning, and
             can teach what i know to others.
           </SplitText>
-        </p>
+        </div>
+      </div>
+      <div className="models">
+        <LanguageModel className="models" />
       </div>
     </div>
   );
