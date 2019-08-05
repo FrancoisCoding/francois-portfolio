@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 import * as THREE from "three";
+import OrbitControls from "three-orbitcontrols";
+
 class LanguageModel extends Component {
   componentDidMount() {
     var scene = new THREE.Scene();
@@ -24,7 +25,7 @@ class LanguageModel extends Component {
     this.mount.appendChild(renderer.domElement);
 
     // Create the shape
-    var geometry = new THREE.BoxGeometry(2, 2, 2);
+    var geometry = new THREE.CubeGeometry(2, 2, 2);
     var cubeMaterials = [
       new THREE.MeshBasicMaterial({
         map: new THREE.TextureLoader().load(
@@ -75,12 +76,14 @@ class LanguageModel extends Component {
     scene.add(cube);
     cube.position.x = -4;
     camera.position.z = 5;
+
     var animate = function() {
       requestAnimationFrame(animate);
       cube.rotation.x += 0.01;
       cube.rotation.y += 0.01;
       renderer.render(scene, camera);
     };
+
     animate();
   }
   render() {

@@ -7,7 +7,21 @@
 
 body {
   background: #f2f3ee;
-  overflow-x: hidden;
+  overflow: hidden;
+}
+
+/* Fonts for all text */
+@import url("https://fonts.googleapis.com/css?family=Handlee|Roboto&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Handlee", cursive;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
 }
 
 /* Text Styles */
@@ -61,6 +75,17 @@ body {
   align-items: center;
   background: #3a4660;
   width: 10%;
+  height: 100vh;
+  justify-content: space-around;
+  color: white;
+}
+
+.aboutSidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #3a4660;
+  width: 40%;
   height: 100vh;
   justify-content: space-around;
   color: white;
@@ -218,4 +243,47 @@ a {
 .models {
   height: auto;
   width: 50%;
+}
+
+/* Work Section Styling */
+.workContainer img {
+  max-width: 60%;
+  height: auto;
+  position: relative;
+  opacity: 1;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.imageButtons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.workButtons {
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  background: #ed8a63;
+  border: 0.05rem solid #3a4660;
+  border-color: #3a4660;
+  color: black;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+  margin: 0.2rem 0.5rem 0.2rem 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.workButtons:hover {
+  background: #3a4660;
+  color: white;
+}
+
+.workButtons:focus {
+  outline: none;
+}
+
+/* Flipbook Styling */
+.rfp-swipeHint {
+  background: #3a4660;
 }

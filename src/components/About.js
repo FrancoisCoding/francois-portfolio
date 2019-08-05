@@ -1,5 +1,5 @@
 import React from "react";
-import Sidebar from "./Sidebar";
+import AboutSidebar from "./AboutSidebar";
 import SplitText from "react-pose-text";
 import LanguageModel from "./LanguagesModel";
 
@@ -17,7 +17,7 @@ const charPoses = {
 const About = () => {
   return (
     <div className="aboutContainer">
-      <Sidebar />
+      <AboutSidebar />
       <div className="homeInfo">
         <h1 className="text-header animated lightSpeedIn">
           <SplitText charPoses={charPoses}>

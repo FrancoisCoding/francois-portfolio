@@ -1,8 +1,8 @@
 import React from "react";
 import Sidebar from "./Sidebar";
-import SplitText from "react-pose-text";
-import { makeStyles } from "@material-ui/core/styles";
-import Grid from "@material-ui/core/Grid";
+import FlipPage from "react-flip-page";
+import { FaGithub } from "react-icons/fa";
+import { FaSistrix } from "react-icons/fa";
 
 const charPoses = {
   hoverable: true,
@@ -16,31 +16,47 @@ const charPoses = {
   }
 };
 
+const flipBookStyles = {
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "center",
+  height: "100vh"
+};
+
 const Work = () => {
   return (
     <div className="workContainer">
       <Sidebar />
-      <div className="projects projectCover">
-        <img
-          src={process.env.PUBLIC_URL + "/project1.png"}
-          alt="reactLogo"
-          class="card-img-top"
-        />
-        <img
-          src={process.env.PUBLIC_URL + "/project2.png"}
-          alt="reactLogo"
-          class="card-img-top"
-        />
-        <img
-          src={process.env.PUBLIC_URL + "/project3.png"}
-          alt="reactLogo"
-          class="card-img-top"
-        />
-        <img
-          src={process.env.PUBLIC_URL + "/project4.png"}
-          alt="reactLogo"
-          class="card-img-top"
-        />
+      <div>
+        <FlipPage
+          height="700"
+          width="1150"
+          pageBackground="#f2f3ee"
+          showSwipeHint="true"
+        >
+          <section style={flipBookStyles}>
+            <img src={process.env.PUBLIC_URL + "/project1.png"} />
+            <div class="imageButtons">
+              <button className="workButtons">Code</button>
+              <button className="workButtons">View Project</button>
+            </div>
+          </section>
+          <section style={flipBookStyles}>
+            <img src={process.env.PUBLIC_URL + "/project2.png"} />
+            <div class="imageButtons">
+              <button className="workButtons">Code</button>
+              <button className="workButtons">View Project</button>
+            </div>
+          </section>
+          <section style={flipBookStyles}>
+            <img src={process.env.PUBLIC_URL + "/project3.png"} />
+            <div class="imageButtons">
+              <button className="workButtons">Code</button>
+              <button className="workButtons">View Project</button>
+            </div>
+          </section>
+        </FlipPage>
       </div>
     </div>
   );

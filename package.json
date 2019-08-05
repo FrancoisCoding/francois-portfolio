@@ -7,15 +7,19 @@
     "@material-ui/styles": "^4.2.1",
     "animate.css": "^3.7.2",
     "firebase": "^6.3.1",
+    "latest-version": "^5.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-flip-page": "^1.5.7",
     "react-icons": "^3.7.0",
     "react-pose": "^4.0.8",
     "react-pose-text": "^3.1.0",
     "react-responsive-carousel": "^3.1.49",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
-    "three": "^0.106.2"
+    "react-three-fiber": "^2.2.14",
+    "three": "^0.107.0",
+    "three-orbitcontrols": "^2.102.2"
   },
   "scripts": {
     "start": "react-scripts start",
