@@ -1,7 +1,6 @@
 import React from "react";
 import { FaHome } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
-import { FaCog } from "react-icons/fa";
 import { FaBriefcase } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
@@ -11,7 +10,7 @@ import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Tooltip from "@material-ui/core/Tooltip";
 
-const AboutSidebar = () => {
+const AboutSidebar = React.memo(() => {
   return (
     <div className="aboutSidebar">
       <div className="sidebar-top">
@@ -72,6 +71,6 @@ const AboutSidebar = () => {
       </div>
     </div>
   );
-};
+});
 
 export default AboutSidebar;

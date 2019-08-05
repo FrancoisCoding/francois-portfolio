@@ -23,7 +23,7 @@ const flipBookStyles = {
   height: "100vh"
 };
 
-const Work = () => {
+const Work = React.memo(() => {
   return (
     <div className="workContainer">
       <Sidebar />
@@ -130,6 +130,6 @@ const Work = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Work;

@@ -14,7 +14,7 @@ const charPoses = {
     }
   }
 };
-const About = () => {
+const About = React.memo(() => {
   return (
     <div className="aboutContainer">
       <AboutSidebar />
@@ -40,6 +40,6 @@ const About = () => {
       </div>
     </div>
   );
-};
+});
 
 export default About;
