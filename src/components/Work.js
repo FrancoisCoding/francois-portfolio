@@ -38,21 +38,55 @@ const Work = () => {
           <section style={flipBookStyles}>
             <img src={process.env.PUBLIC_URL + "/project1.png"} />
             <div class="imageButtons">
-              <button className="workButtons">Code</button>
+              <a
+                href="https://github.com/FrancoisCoding/francois-games"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social"
+              >
+                <button className="workButtons">Code</button>
+              </a>
               <button className="workButtons">View Project</button>
             </div>
           </section>
           <section style={flipBookStyles}>
             <img src={process.env.PUBLIC_URL + "/project2.png"} />
             <div class="imageButtons">
-              <button className="workButtons">Code</button>
+              <a
+                href="https://github.com/FrancoisCoding/MathGame"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social"
+              >
+                <button className="workButtons">Code</button>
+              </a>
               <button className="workButtons">View Project</button>
             </div>
           </section>
           <section style={flipBookStyles}>
             <img src={process.env.PUBLIC_URL + "/project3.png"} />
             <div class="imageButtons">
-              <button className="workButtons">Code</button>
+              <a
+                href="https://play.google.com/store/apps/details?id=saneFreakyGaming.KnifeRunifeRun"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social"
+              >
+                <button className="workButtons">View Project</button>
+              </a>
+            </div>
+          </section>
+          <section style={flipBookStyles}>
+            <img src={process.env.PUBLIC_URL + "/project4.png"} />
+            <div class="imageButtons">
+              <a
+                href="https://github.com/orgs/secret-family-recipe-s-cookbook/dashboard"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social"
+              >
+                <button className="workButtons">Code</button>
+              </a>
               <button className="workButtons">View Project</button>
             </div>
           </section>
