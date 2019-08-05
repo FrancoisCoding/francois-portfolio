@@ -1,33 +1,286 @@
-.App {
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f2f3ee;
+  overflow: hidden;
+}
+
+/* Fonts for all text */
+@import url("https://fonts.googleapis.com/css?family=Handlee|Roboto&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Handlee", cursive;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Text Styles */
+.text-header {
+  color: #866e60;
+  margin: 0 auto;
+  font-size: 3rem;
+}
+
+.text {
+  line-height: 2rem;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 500;
+}
+
+.homeBtn {
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  background: transparent;
+  border: 0.05rem solid #866e60;
+  border-color: #866e60;
+  color: #866e60;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  max-width: 15%;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.homeBtn:hover {
+  background: #3a4660;
+  color: #f2f3ee;
+}
+
+.homeInfo,
+.work,
+.about {
+  padding: 3rem;
+}
+
+.homeInfo {
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Sidebar Styling */
+.sidebar {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: #3a4660;
+  width: 10%;
+  height: 100vh;
+  justify-content: space-around;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.aboutSidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #3a4660;
+  width: 40%;
+  height: 100vh;
+  justify-content: space-around;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar-top {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  justify-content: space-around;
+  height: 70%;
+}
+
+.sidebarSocials {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 30%;
+}
+
+.aboutContainer,
+.workContainer,
+.homeContainer,
+.flex {
+  display: flex;
+}
+
+.social:hover,
+.navLinks:hover {
+  color: #ed8a63;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Contact Component Styling */
+.contactContainer {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactContainer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.brand {
+  text-align: center;
+}
+
+.wrapper {
+  box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+}
+
+.wrapper > * {
+  padding: 1em;
+}
+
+.company-info {
+  background: var(--mainGreen);
+}
+
+.company-info h3,
+.company-info ul {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.contact {
+  background: var(--controller);
+}
+
+/* FORM STYLES */
+.contact form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.contact form label {
+  display: block;
+}
+
+.contact form p {
+  margin: 0;
+}
+
+.contact form .full {
+  grid-column: 1 / 3;
+}
+
+.contact form button,
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #c9e6ff;
+}
+
+.contact form button {
+  background: #845007;
+  border: 0;
+  text-transform: uppercase;
+}
+
+.contact form button:hover,
+.contact form button:focus {
+  color: #fff;
+  outline: 0;
+  transition: background-color 2s ease-out;
+}
+
+.contactBtn {
+  font-size: 2rem;
+}
+
+.alert {
+  text-align: center;
+  padding: 10px;
+  background: #79c879;
+  color: white;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.cartoonPortrait {
+  height: auto;
+  width: 40%;
+  border-radius: 50%;
+  margin-top: 1rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.projects img {
+  height: auto;
+  width: 90%;
+}
+
+.models {
+  height: auto;
+  width: 50%;
+}
+
+/* Work Section Styling */
+.workContainer {
+  text-align: center;
+}
+
+.workContainer img {
+  max-width: 60%;
+  height: auto;
+  position: relative;
+  opacity: 1;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.imageButtons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.workButtons {
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  background: #ed8a63;
+  border: 0.05rem solid #3a4660;
+  border-color: #3a4660;
+  color: black;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+  margin: 0.2rem 0.5rem 0.2rem 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.workButtons:hover {
+  background: #3a4660;
+  color: white;
+}
+
+.workButtons:focus {
+  outline: none;
 }
