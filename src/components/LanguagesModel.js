@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 import * as THREE from "three";
 
-class LanguageModel extends Component {
+class LanguageModel extends PureComponent {
   componentDidMount() {
     var scene = new THREE.Scene();
     var camera = new THREE.PerspectiveCamera(

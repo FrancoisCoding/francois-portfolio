@@ -11,7 +11,7 @@ import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Tooltip from "@material-ui/core/Tooltip";
 
-const Sidebar = () => {
+const Sidebar = React.memo(() => {
   return (
     <div className="sidebar">
       <div className="sidebar-top">
@@ -72,6 +72,6 @@ const Sidebar = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Sidebar;

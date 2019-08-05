@@ -13,7 +13,7 @@ const charPoses = {
     }
   }
 };
-const Home = () => {
+const Home = React.memo(() => {
   return (
     <div className="homeContainer">
       <Sidebar />
@@ -40,6 +40,6 @@ const Home = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Home;
