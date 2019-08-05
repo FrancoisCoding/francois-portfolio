@@ -1,8 +1,7 @@
 import React from "react";
 import Sidebar from "./Sidebar";
 import FlipPage from "react-flip-page";
-import { FaGithub } from "react-icons/fa";
-import { FaSistrix } from "react-icons/fa";
+import SplitText from "react-pose-text";
 
 const charPoses = {
   hoverable: true,
@@ -36,6 +35,9 @@ const Work = () => {
           showSwipeHint="true"
         >
           <section style={flipBookStyles}>
+            <h1 className="text-header">
+              <SplitText charPoses={charPoses}>Francois-Games Center</SplitText>
+            </h1>
             <img src={process.env.PUBLIC_URL + "/project1.png"} />
             <div class="imageButtons">
               <a
@@ -57,6 +59,9 @@ const Work = () => {
             </div>
           </section>
           <section style={flipBookStyles}>
+            <h1 className="text-header">
+              <SplitText charPoses={charPoses}>Math Game</SplitText>
+            </h1>
             <img src={process.env.PUBLIC_URL + "/project2.png"} />
             <div class="imageButtons">
               <a
@@ -78,6 +83,11 @@ const Work = () => {
             </div>
           </section>
           <section style={flipBookStyles}>
+            <h1 className="text-header">
+              <SplitText charPoses={charPoses}>
+                Knife Run Android App Built With Unity
+              </SplitText>
+            </h1>
             <img src={process.env.PUBLIC_URL + "/project3.png"} />
             <div class="imageButtons">
               <a
@@ -91,6 +101,11 @@ const Work = () => {
             </div>
           </section>
           <section style={flipBookStyles}>
+            <h1 className="text-header">
+              <SplitText charPoses={charPoses}>
+                Secret Family Recipe Cookbook
+              </SplitText>
+            </h1>
             <img src={process.env.PUBLIC_URL + "/project4.png"} />
             <div class="imageButtons">
               <a

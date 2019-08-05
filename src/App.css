@@ -246,6 +246,10 @@ a {
 }
 
 /* Work Section Styling */
+.workContainer {
+  text-align: center;
+}
+
 .workContainer img {
   max-width: 60%;
   height: auto;
@@ -281,9 +285,4 @@ a {
 
 .workButtons:focus {
   outline: none;
-}
-
-/* Flipbook Styling */
-.rfp-swipeHint {
-  background: #3a4660;
 }
