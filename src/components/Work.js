@@ -46,7 +46,14 @@ const Work = () => {
               >
                 <button className="workButtons">Code</button>
               </a>
-              <button className="workButtons">View Project</button>
+              <a
+                href="https://francois-game-center.netlify.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social"
+              >
+                <button className="workButtons">View Project</button>
+              </a>
             </div>
           </section>
           <section style={flipBookStyles}>
@@ -60,7 +67,14 @@ const Work = () => {
               >
                 <button className="workButtons">Code</button>
               </a>
-              <button className="workButtons">View Project</button>
+              <a
+                href="https://francoiscoding.itch.io/mathgame"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social"
+              >
+                <button className="workButtons">View Project</button>
+              </a>
             </div>
           </section>
           <section style={flipBookStyles}>
@@ -87,7 +101,14 @@ const Work = () => {
               >
                 <button className="workButtons">Code</button>
               </a>
-              <button className="workButtons">View Project</button>
+              <a
+                href="https://secret-recipes.netlify.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social"
+              >
+                <button className="workButtons">View Project</button>
+              </a>
             </div>
           </section>
         </FlipPage>
