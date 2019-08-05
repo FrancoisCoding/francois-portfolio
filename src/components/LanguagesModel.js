@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import * as THREE from "three";
-import OrbitControls from "three-orbitcontrols";
 
 class LanguageModel extends Component {
   componentDidMount() {
@@ -25,7 +24,7 @@ class LanguageModel extends Component {
     this.mount.appendChild(renderer.domElement);
 
     // Create the shape
-    var geometry = new THREE.CubeGeometry(2, 2, 2);
+    var geometry = new THREE.BoxBufferGeometry(2, 2, 2);
     var cubeMaterials = [
       new THREE.MeshBasicMaterial({
         map: new THREE.TextureLoader().load(

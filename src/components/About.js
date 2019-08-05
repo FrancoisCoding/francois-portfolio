@@ -25,12 +25,14 @@ const About = () => {
           </SplitText>
         </h1>
         <div className="text">
-          <SplitText charPoses={charPoses}>
-            Since beginning my journey as a fullstack developer, I've created
-            many sites, designed games/apps , and have built and modified
-            backend servers. I'm confident in my skills, always learning, and
-            can teach what i know to others.
-          </SplitText>
+          <p>
+            <SplitText charPoses={charPoses}>
+              Since beginning my journey as a fullstack developer, I've created
+              many sites, designed games/apps , and have built and modified
+              backend servers. I'm confident in my skills, always learning, and
+              can teach what i know to others.
+            </SplitText>
+          </p>
         </div>
       </div>
       <div className="models">

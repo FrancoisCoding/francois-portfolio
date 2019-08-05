@@ -35,7 +35,7 @@ const Work = () => {
           showSwipeHint="true"
         >
           <section style={flipBookStyles}>
-            <h1 className="text-header">
+            <h1 className="text-header animated lightSpeedIn">
               <SplitText charPoses={charPoses}>Francois-Games Center</SplitText>
             </h1>
             <img src={process.env.PUBLIC_URL + "/project1.png"} />
@@ -59,7 +59,7 @@ const Work = () => {
             </div>
           </section>
           <section style={flipBookStyles}>
-            <h1 className="text-header">
+            <h1 className="text-header animated lightSpeedIn">
               <SplitText charPoses={charPoses}>Math Game</SplitText>
             </h1>
             <img src={process.env.PUBLIC_URL + "/project2.png"} />
@@ -83,7 +83,7 @@ const Work = () => {
             </div>
           </section>
           <section style={flipBookStyles}>
-            <h1 className="text-header">
+            <h1 className="text-header animated lightSpeedIn">
               <SplitText charPoses={charPoses}>
                 Knife Run Android App Built With Unity
               </SplitText>
@@ -101,7 +101,7 @@ const Work = () => {
             </div>
           </section>
           <section style={flipBookStyles}>
-            <h1 className="text-header">
+            <h1 className="text-header animated lightSpeedIn">
               <SplitText charPoses={charPoses}>
                 Secret Family Recipe Cookbook
               </SplitText>

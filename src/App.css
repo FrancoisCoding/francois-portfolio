@@ -59,7 +59,6 @@ p {
 }
 
 .homeInfo,
-.skills,
 .work,
 .about {
   padding: 3rem;
@@ -108,7 +107,6 @@ p {
   height: 30%;
 }
 
-.skillsContainer,
 .aboutContainer,
 .workContainer,
 .homeContainer,

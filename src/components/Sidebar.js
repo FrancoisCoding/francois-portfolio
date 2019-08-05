@@ -25,11 +25,6 @@ const Sidebar = () => {
             <FaUser />
           </Link>
         </Tooltip>
-        <Tooltip title="Skills" placement="right">
-          <Link to="/skills" className="navLinks">
-            <FaCog />
-          </Link>
-        </Tooltip>
         <Tooltip title="Work" placement="right">
           <Link to="/work" className="navLinks">
             <FaBriefcase />
