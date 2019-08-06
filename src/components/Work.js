@@ -33,6 +33,7 @@ const Work = React.memo(() => {
           width="1150"
           pageBackground="#f2f3ee"
           showSwipeHint="true"
+          uncutPages="true"
         >
           <section style={flipBookStyles}>
             <h1 className="text-header animated lightSpeedIn">
