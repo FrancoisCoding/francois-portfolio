@@ -72,16 +72,16 @@ export default class Contact extends Component {
           <div className="wrapper animated bounceInLeft">
             <div className="company-info">
               <h1>How Can We Help?</h1>
-              <p>
+              <p className="contactText">
                 Are you interested in learning more about FrancoisCoding? Enter
                 your information in the form and Isaiah will contact you
                 shortly.
               </p>
               <ul>
-                <li>
+                <li className="contactText">
                   <i className="fa fa-phone" /> (352) 989-3703
                 </li>
-                <li>
+                <li className="contactText">
                   <i className="fa fa-envelope" /> francoiscoding@yahoo.com
                 </li>
               </ul>
@@ -132,7 +132,7 @@ export default class Contact extends Component {
                   />
                 </p>
                 <p className="full">
-                  <button>Submit</button>
+                  <button className="contactBtn">Submit</button>
                 </p>
               </form>
             </div>

@@ -77,6 +77,7 @@ p {
   height: 100vh;
   justify-content: space-around;
   color: white;
+  padding: 1.2rem;
 }
 
 .aboutSidebar {
@@ -88,6 +89,7 @@ p {
   height: 100vh;
   justify-content: space-around;
   color: white;
+  padding: 1.2rem;
 }
 
 .sidebar-top {
@@ -196,20 +198,19 @@ a {
 }
 
 .contact form button {
+  color: #fff;
   background: #845007;
   border: 0;
   text-transform: uppercase;
+  transition: all 0.3s ease-out;
 }
 
 .contact form button:hover,
 .contact form button:focus {
-  color: #fff;
   outline: 0;
-  transition: background-color 2s ease-out;
-}
-
-.contactBtn {
-  font-size: 2rem;
+  cursor: pointer;
+  background: #3a4660;
+  opacity: 0.9;
 }
 
 .alert {
@@ -223,7 +224,7 @@ a {
 
 .cartoonPortrait {
   height: auto;
-  width: 40%;
+  width: 45%;
   border-radius: 50%;
   margin-top: 1rem;
 }
@@ -283,4 +284,76 @@ a {
 
 .workButtons:focus {
   outline: none;
+}
+
+.flipPage {
+  width: 100vw !important;
+}
+
+@media (max-width: 1000px) {
+  .aboutHeader {
+    font-size: 1.8rem;
+  }
+  .aboutText {
+    font-size: 0.9rem;
+  }
+  canvas {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .sidebar {
+    padding: 2rem;
+  }
+
+  .aboutSidebar {
+    padding: 2rem;
+  }
+  .cartoonPortrait {
+    width: 70%;
+  }
+
+  .flipPage h1 {
+    font-size: 2rem;
+  }
+  .workButtons {
+    font-size: 1.1rem;
+    padding: 0.2rem 0.4rem;
+    margin: 0.2rem 0.5rem 0.2rem 0;
+  }
+  .contactBtn {
+    font-size: 0.7rem;
+  }
+  .company-info h1 {
+    font-size: 1.2rem;
+  }
+  .contactText {
+    font-size: 0.8rem;
+  }
+  .company-info {
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .text-header {
+    font-size: 2.2rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+  .cartoonPortrait {
+    width: 90%;
+  }
+  .flipPage h1 {
+    font-size: 1rem;
+  }
+
+  .workButtons {
+    font-size: 1rem;
+    padding: 0.1rem 0.3rem;
+    margin: 0.2rem 0.5rem 0.2rem 0;
+  }
 }

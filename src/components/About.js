@@ -19,13 +19,13 @@ const About = React.memo(() => {
     <div className="aboutContainer">
       <AboutSidebar />
       <div className="homeInfo">
-        <h1 className="text-header animated lightSpeedIn">
+        <h1 className="text-header animated lightSpeedIn aboutHeader">
           <SplitText charPoses={charPoses}>
             Hello, my name is Isaiah Francois.
           </SplitText>
         </h1>
         <div className="text">
-          <p>
+          <p className="aboutText">
             <SplitText charPoses={charPoses}>
               Since beginning my journey as a fullstack developer, I've created
               many sites, designed games/apps , and have built and modified
