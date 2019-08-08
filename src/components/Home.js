@@ -24,12 +24,12 @@ const Home = React.memo(() => {
           </SplitText>
         </h1>
         <div className="text">
-          <p>
+          <div>
             <SplitText charPoses={charPoses}>
               I design and code day in and day out creating beautiful designs,
               and I love what I do.
             </SplitText>
-          </p>
+          </div>
         </div>
         <img
           src={process.env.PUBLIC_URL + "/portrait.png"}

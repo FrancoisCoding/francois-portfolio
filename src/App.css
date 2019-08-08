@@ -383,6 +383,9 @@ a {
   body {
     overflow-x: hidden;
   }
+  .workContainer img {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 500px) {

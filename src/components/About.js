@@ -27,14 +27,14 @@ const About = React.memo(() => {
             </SplitText>
           </h1>
           <div className="text">
-            <p className="aboutText">
+            <div className="aboutText">
               <SplitText charPoses={charPoses}>
                 Since beginning my journey as a fullstack developer, I've
                 created many sites, designed games/apps , and have built and
                 modified backend servers. I'm confident in my skills, always
                 learning, and can teach what i know to others.
               </SplitText>
-            </p>
+            </div>
           </div>
         </div>
         <div className="models">
@@ -53,7 +53,7 @@ const About = React.memo(() => {
             </SplitText>
           </h1>
           <div className="text">
-            <p className="aboutText">
+            <div className="aboutText">
               <SplitText charPoses={charPoses}>
                 Since beginning my journey as a fullstack developer, I've
                 created many sites, designed games/apps , and have built and
@@ -82,7 +82,7 @@ const About = React.memo(() => {
                 Lambda School to further my technoligical studies
               </SplitText>
               <br />
-            </p>
+            </div>
           </div>
         </div>
       </div>

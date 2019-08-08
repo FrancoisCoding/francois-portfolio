@@ -45,7 +45,7 @@ const Work = React.memo(() => {
               src={process.env.PUBLIC_URL + "/project1.png"}
               alt="Francois-Games Project"
             />
-            <div class="imageButtons">
+            <div className="imageButtons">
               <a
                 href="https://github.com/FrancoisCoding/francois-games"
                 target="_blank"
@@ -72,7 +72,7 @@ const Work = React.memo(() => {
               src={process.env.PUBLIC_URL + "/project2.png"}
               alt="Math Game Project"
             />
-            <div class="imageButtons">
+            <div className="imageButtons">
               <a
                 href="https://github.com/FrancoisCoding/MathGame"
                 target="_blank"
@@ -101,7 +101,7 @@ const Work = React.memo(() => {
               src={process.env.PUBLIC_URL + "/project3.png"}
               alt="Knife Run Project"
             />
-            <div class="imageButtons">
+            <div className="imageButtons">
               <a
                 href="https://play.google.com/store/apps/details?id=saneFreakyGaming.KnifeRunifeRun"
                 target="_blank"
@@ -122,7 +122,7 @@ const Work = React.memo(() => {
               src={process.env.PUBLIC_URL + "/project4.png"}
               alt="Secret Family Recipes Project"
             />
-            <div class="imageButtons">
+            <div className="imageButtons">
               <a
                 href="https://github.com/orgs/secret-family-recipe-s-cookbook/dashboard"
                 target="_blank"
