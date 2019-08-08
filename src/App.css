@@ -378,8 +378,10 @@ a {
     flex-grow: 1;
     margin: 0;
   }
+
+  html,
   body {
-    overflow: auto;
+    overflow-x: hidden;
   }
 }
 
