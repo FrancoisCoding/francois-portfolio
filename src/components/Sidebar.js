@@ -54,7 +54,7 @@ const Sidebar = React.memo(() => {
           <FaLinkedinIn />
         </a>
         <a
-          href="https://www.facebook.com/FrancoisCodingj"
+          href="https://www.facebook.com/FrancoisCoding"
           target="_blank"
           rel="noopener noreferrer"
           className="social"

@@ -269,7 +269,7 @@ a {
 
 .workButtons {
   text-transform: capitalize;
-  font-size: 1.4rem;
+  font-size: 1rem;
   background: #ed8a63;
   border: 0.05rem solid #3a4660;
   border-color: #3a4660;
@@ -292,6 +292,7 @@ a {
 
 .flipPage {
   width: 100vw !important;
+  height: 100vh !important;
 }
 
 @media (max-width: 1000px) {
