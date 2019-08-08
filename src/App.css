@@ -109,6 +109,10 @@ p {
   height: 30%;
 }
 
+.aboutInnerContainer {
+  padding: 2rem;
+}
+
 .aboutContainer,
 .workContainer,
 .homeContainer,
@@ -333,6 +337,49 @@ a {
   }
   .company-info {
     padding: 0.8rem;
+  }
+
+  .aboutContainer {
+    display: block;
+  }
+
+  .flex {
+    display: block;
+  }
+
+  .workContainer {
+    display: block;
+  }
+
+  .homeContainer {
+    display: block;
+  }
+
+  .sidebar {
+    flex-direction: row;
+    width: 100vw;
+    height: auto;
+    padding: 0;
+  }
+
+  .aboutSidebar {
+    flex-direction: row;
+    width: 100vw;
+    height: auto;
+    padding: 0;
+  }
+
+  .sidebarSocials {
+    display: none;
+  }
+  .sidebar-top {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-grow: 1;
+    margin: 0;
+  }
+  body {
+    overflow: auto;
   }
 }
 
